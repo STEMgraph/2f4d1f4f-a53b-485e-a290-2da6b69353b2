@@ -38,10 +38,10 @@ Git will mark the changes where you need to decide what to keep. This task can b
 <details>
     <summary>Forgot how to stage and commit?</summary>
     This is not a problem and you will get used to it:
-    ```sh
-    git add lorem.txt
-    git commit -m "Add new lorem ipsum text"
-    ```
+    
+    <code> git add lorem.txt </code>
+    <code> git commit -m "Add new lorem ipsum text"</code>
+    
 </details>
 
 3. **Create a new branch**: Now we want to create a branch on which we want to try some changes in our file: `git checkout -b my_new_branch`. Open `lorem.txt` with your favorite editor (that's a synonym for [vim](https://github.com/STEMgraph/2c7334b3-b07d-48d6-a562-79072d8e166e) obviously) and change some words. Stage and commit the changes. 
