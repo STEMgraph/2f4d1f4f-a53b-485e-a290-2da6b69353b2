@@ -2,17 +2,9 @@
 {
   "id": "2f4d1f4f-a53b-485e-a290-2da6b69353b2",
   "depends_on": [],
-  "author": "Stephan Bökelmann",
-  "first_used": "2025-05-19",
-  "keywords": ["git","merge","branch"]
-}
---->
-<!---
-{
-  "depends_on": [],
-  "author": ["Tabea Röthemeyer","Stephan Bökelmann],
+  "author": ["Tabea Röthemeyer","Stephan Bökelmann"],
   "first_used": "2025-04-12",
-  "keywords": ["git", "branch", "merge"]
+  "keywords": ["git","merge","branch"]
 }
 --->
 
