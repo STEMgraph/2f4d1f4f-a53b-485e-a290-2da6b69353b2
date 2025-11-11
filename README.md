@@ -1,6 +1,7 @@
 <!---
 {
   "id": "2f4d1f4f-a53b-485e-a290-2da6b69353b2",
+  "teaches": "Git: Branch and Merge Conflicts",
   "depends_on": [],
   "author": ["Tabea Röthemeyer","Stephan Bökelmann"],
   "first_used": "2025-04-12",
