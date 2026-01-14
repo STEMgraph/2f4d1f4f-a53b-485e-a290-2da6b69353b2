@@ -80,7 +80,7 @@ Delete the indicators and the text that shouldn't be in the merged version. Save
 
 
 ## 3) Questions
-1. In the past `git checkout` was used instead of `git switch`. Find out the differences by searching the internet.
+1. In the past `git branch` was used instead of `git switch`. Find out the differences by searching the internet.
 2. How can you compare the changes of two branches before merging?
 3. If the merge does not work, how can you reset your work?
 
