@@ -18,7 +18,7 @@ Git commits usually have an ancestor (except for the first commit in a repo and 
 
 ```sh
 git status
-git checkout -b <new-branchname>
+git switch -c <new-branchname>
 git status
 ```
 
@@ -46,8 +46,21 @@ Git will mark the changes where you need to decide what to keep. This task can b
     ```
 </details>
 
-3. **Create a new branch**: Now we want to create a branch on which we want to try some changes in our file: `git checkout -b my_new_branch`. Open `lorem.txt` with your favorite editor (that's a synonym for [vim](https://github.com/STEMgraph/2c7334b3-b07d-48d6-a562-79072d8e166e) obviously) and change some words. Stage and commit the changes. 
-4. **Checkout out Default Branch again**: Run `git branch`. You should see your default branch and `my_new_branch`. Use `git checkout <default_branch_name>` to switch back. Inspect the file `lorem.txt`. 
+3. **Create a new branch**: Now we want to create a branch on which we want to try some changes in our file: `git switch -c my_new_branch`. Open `lorem.txt` with your favorite editor (that's a synonym for [vim](https://github.com/STEMgraph/2c7334b3-b07d-48d6-a562-79072d8e166e) obviously) and change some words. Stage and commit the changes. 
+4. **Switch back to the default branch**: Run `git branch`. You should see your default branch and `my_new_branch`. Use `git switch <default_branch_name>` to switch back. Inspect the file `lorem.txt`. 
+
+4.5 **Compare branches before merging**: Before you merge, inspect what will change by comparing the two branches. For example:
+
+```sh
+# show the full diff between branches
+git diff main..my_new_branch
+
+# list only the files that differ
+git diff --name-only main..my_new_branch
+```
+
+This helps you spot conflicting edits or unexpected changes before running the merge.
+
 5. **Merge your Branches**: To merge the changes on your branch into your current working directory, run `git merge my_new_branch`. This will pull the branches changes into your branch.
 6. **Another new Branch**: Create another new branch, change a line in `lorem.txt` and commit it to the branch. Checkout the default branch again, change the same line in `lorem.txt`, but with other words and commit that as well. Now we have a different situation. Both branches modified the old point at which they branched. Call `git merge <new branch name>`. You will be confronted with a diagnostics message indicating a conflict:
 ```sh
@@ -67,7 +80,7 @@ Delete the indicators and the text that shouldn't be in the merged version. Save
 
 
 ## 3) Questions
-1. Find another command that creates a new branch. Compare it with the proposed checkout command.
+1. In the past `git branch` was used instead of `git switch`. Find out the differences by searching the internet.
 2. How can you compare the changes of two branches before merging?
 3. If the merge does not work, how can you reset your work?
 
